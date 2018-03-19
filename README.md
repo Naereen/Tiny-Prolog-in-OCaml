@@ -1,5 +1,5 @@
 # [Tiny-Prolog-in-OCaml](https://github.com/Naereen/Tiny-Prolog-in-OCaml)
-## A tiny implementation of a basic Prolog language, in OCaml.
+> A tiny implementation of a small subset of the Prolog language, in OCaml. With small and fun examples. 
 
 This project contains [the code](prolog/) and [examples](exemples/) for a tiny [Prolog](https://en.wikipedia.org/wiki/Prolog) implementation in [OCaml](https://ocaml.org/).
 
