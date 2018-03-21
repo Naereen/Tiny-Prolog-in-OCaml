@@ -1,5 +1,9 @@
-*.opt
+# temp files
 *~
+.ipynb_checkpoints
+
+# ocaml build temp files
+*.opt
 *.annot
 *.cmo
 *.cma

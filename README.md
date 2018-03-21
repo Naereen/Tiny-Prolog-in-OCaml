@@ -47,6 +47,10 @@ $ ./prolog/prolog ./exemples/tomandjerry.pl "ishuntedby(jerry, tom)."
   { }
 ```
 
+## More example
+- See [this folder](exemples/),
+- Or [this notebook](example.ipynb).
+
 ---
 
 ### :scroll: License ? [![GitHub license](https://img.shields.io/github/license/Naereen/Tiny-Prolog-in-OCaml.svg)](https://github.com/Naereen/Tiny-Prolog-in-OCaml/blob/master/LICENSE)
