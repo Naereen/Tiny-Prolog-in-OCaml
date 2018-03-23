@@ -1,4 +1,4 @@
-(** Makefile to build https://github.com/Naereen/Tiny-Prolog-in-OCaml
+(** OCaml source code of https://github.com/Naereen/Tiny-Prolog-in-OCaml
     (C) 2018 Lilian Besson
     MIT License, https://lbesson.mit-license.org/
 *)
@@ -18,11 +18,11 @@ if nbarg >= 2 then begin
     printf "?- %s\n" fake_read_line;
     let prog = parse_progs progs in
     let trm_list = parse_goal fake_read_line in
-    prouve_buts ~interactive:false prog trm_list
+    prove_goals ~interactive:false prog trm_list
   end else begin
     let prog = parse_progs listargv in
     printf "?- ";
     let trm_list = parse_goal (read_line ()) in
-    prouve_buts ~interactive:true prog trm_list
+    prove_goals ~interactive:true prog trm_list
   end
-end
+end;;
