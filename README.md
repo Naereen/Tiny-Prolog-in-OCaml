@@ -1,10 +1,12 @@
 # [Tiny-Prolog-in-OCaml](https://github.com/Naereen/Tiny-Prolog-in-OCaml)
-> A tiny implementation of a small subset of the Prolog language, in OCaml. With small and fun examples. 
+> A tiny implementation of a small subset of the Prolog language, in OCaml. With small and fun examples.
+>
+> WARNING: this project only has an **educational purpose**, for a real-world use of Prolog, please refer to [GNU Prolog (gprolog)](XXX).
 
-This project contains [the code](prolog/) and [examples](exemples/) for a tiny [Prolog](https://en.wikipedia.org/wiki/Prolog) implementation in [OCaml](https://ocaml.org/).
+This project contains [the code](prolog/) and [examples](examples/) for a tiny [Prolog](https://en.wikipedia.org/wiki/Prolog) implementation, written in [the OCaml language](https://ocaml.org/).
 
 - See [this folder](prolog/) for instructions to build the project (really easy: clone, run `make`, relax and enjoy :tada:). The implementation focuses on a very small subset of Prolog, see the examples for a good idea of what is supported.
-- See [this other folder](exemples/) for examples.
+- See [this other folder](examples/) for examples (in English).
 
 ## Example
 - A theory has this form, first with axioms (predicate):
@@ -18,10 +20,10 @@ fast(X) <-- mouse(X).
 stupid(X) <-- cat(X).
 ```
 
-- If you save this file (see [this example](exemples/tomandjerry.pl)), you can then load it with the `prolog` binary:
+- If you save this file (see [this example](examples/tomandjerry.pl)), you can then load it with the `prolog` binary:
 
 ```bash
-$ ./prolog/prolog ./exemples/tomandjerry.pl
+$ ./prolog/prolog ./examples/tomandjerry.pl
 ?- stupid(tom).
   { }
 continue ? (o/n) [o] :
@@ -30,7 +32,7 @@ continue ? (o/n) [o] :
 - This `{ }` is an empty model, meaning that `stupid(tom).` evaluates to True in an empty model (no need for instanciation).
 - You can also ask your question directly in the command line:
 ```bash
-$ ./prolog/prolog ./exemples/tomandjerry.pl "fast(tom)."
+$ ./prolog/prolog ./examples/tomandjerry.pl "fast(tom)."
 ?- fast(tom).
 ```
 - An empty response mean that the term is false, no matter the model.
@@ -40,15 +42,15 @@ $ ./prolog/prolog ./exemples/tomandjerry.pl "fast(tom)."
 ishuntedby(X, Y) <-- mouse(X), cat(Y).
 ```
 ```bash
-$ ./prolog/prolog ./exemples/tomandjerry.pl "ishuntedby(tom, jerry)."
+$ ./prolog/prolog ./examples/tomandjerry.pl "ishuntedby(tom, jerry)."
 ?- ishuntedby(tom, jerry).
-$ ./prolog/prolog ./exemples/tomandjerry.pl "ishuntedby(jerry, tom)."
+$ ./prolog/prolog ./examples/tomandjerry.pl "ishuntedby(jerry, tom)."
 ?- ishuntedby(jerry, tom).
   { }
 ```
 
 ## More example
-- See [this folder](exemples/),
+- See [this folder](examples/),
 - Or [this notebook](example.ipynb).
 
 ---
@@ -62,6 +64,7 @@ This (small) repository is published under the terms of the [MIT license](http:/
 [![Analytics](https://ga-beacon.appspot.com/UA-38514290-17/github.com/Naereen/Tiny-Prolog-in-OCaml/README.md?pixel)](https://GitHub.com/Naereen/Tiny-Prolog-in-OCaml/)
 
 [![made-with-OCaml](https://img.shields.io/badge/Made%20with-OCaml-1f425f.svg)](https://ocaml.org/)
+[![made-for-teaching](https://img.shields.io/badge/Made%20for-Teaching-6800ff.svg)](https://perso.crans.org/besson/teach/)
 
 [![ForTheBadge built-with-science](http://ForTheBadge.com/images/badges/built-with-science.svg)](https://GitHub.com/Naereen/)
 [![ForTheBadge uses-badges](http://ForTheBadge.com/images/badges/uses-badges.svg)](http://ForTheBadge.com)
