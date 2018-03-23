@@ -49,6 +49,12 @@ $ ./prolog/prolog ./examples/tomandjerry.pl "ishuntedby(jerry, tom)."
   { }
 ```
 
+- You can also add comments, that are lines starting with one or more `#` character.
+```prolog
+# the mouse always espace the cat!
+istrickedby(X, Y) <-- cat(X), mouse(Y).
+```
+
 ## More example
 - See [this folder](examples/),
 - Or [this notebook](example.ipynb).

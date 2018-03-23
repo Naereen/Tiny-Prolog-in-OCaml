@@ -19,16 +19,6 @@ let rec app_subst l trm =
 
 let subst_on_couple x t = function (p, trm) -> (p, subst x t trm);;
 
-let rec in_list x = function  (* List.mem *)
-  | [] -> false
-  | a::q -> a=x || (in_list x q)
-;;
-
-let rec filter l = function  (* List.filter *)
-  | [] -> []
-  | (x, t)::q -> if in_list x l then (filter l q) else (x, t)::(filter l q)
-;;
-
 let rec apply_subst_on_subst s1 s2 =
   match s1 with
   | [] -> s2
