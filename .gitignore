@@ -1,6 +1,7 @@
 # temp files
 *~
 .ipynb_checkpoints
+example.html
 
 # ocaml build temp files
 *.opt
