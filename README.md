@@ -1,7 +1,7 @@
 # [Tiny-Prolog-in-OCaml](https://github.com/Naereen/Tiny-Prolog-in-OCaml)
 > A tiny implementation of a small subset of the Prolog language, in OCaml. With small and fun examples.
 >
-> WARNING: this project only has an **educational purpose**, for a real-world use of Prolog, please refer to [GNU Prolog (gprolog)](XXX).
+> WARNING: this project only has an **educational purpose**, for a real-world use of Prolog, please refer to [GNU Prolog (gprolog)](http://gprolog.org/).
 
 This project contains [the code](prolog/) and [examples](examples/) for a tiny [Prolog](https://en.wikipedia.org/wiki/Prolog) implementation, written in [the OCaml language](https://ocaml.org/).
 
